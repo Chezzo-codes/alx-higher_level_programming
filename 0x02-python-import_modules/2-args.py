@@ -6,7 +6,7 @@ def main(*argv):
     arglen = len(sys.argv) - 1
     arglist = sys.argv[1:]
     i = 1
-    
+
     if arglen == 1:
         print("{} argument".format(arglen))
     else:
