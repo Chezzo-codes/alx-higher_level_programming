@@ -7,10 +7,12 @@ def main(*argv):
     arglist = sys.argv[1:]
     i = 1
 
-    if arglen == 1:
-        print("{} argument".format(arglen))
+    if arglen == 0:
+        print("{} arguments.".format(arglen))
+    elif arglen == 1:
+        print("{} argument:".format(arglen))
     else:
-        print("{} arguments".format(arglen))
+        print("{} arguments:".format(arglen))
 
     for arg in arglist:
         print("{}: {}".format(i, arg))
