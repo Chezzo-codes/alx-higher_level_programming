@@ -7,11 +7,9 @@ def main():
     if len(argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-
     a = int(argv[1])
     b = int(argv[3])
     op = argv[2]
-
     if op == '+':
         print("{} {} {} = {}".format(a, op, b, add(a, b)))
     elif op == '-':
