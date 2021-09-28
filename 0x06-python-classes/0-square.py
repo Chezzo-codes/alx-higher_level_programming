@@ -2,6 +2,8 @@
 """
 My First class
 """
+
+
 class Square:
     """
     Defines a square
