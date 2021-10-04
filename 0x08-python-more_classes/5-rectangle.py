@@ -83,3 +83,9 @@ class Rectangle:
         Returns the class representation as a string
         """
         return ("Rectangle({}, {})".format(self.__width, self.__height))
+
+    def __del__(self):
+        """
+        Prints message when rect is deleted
+        """
+        print("Bye rectangle...")
