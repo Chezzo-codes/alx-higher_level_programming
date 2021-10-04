@@ -45,7 +45,7 @@ class Rectangle:
         """
         Setter (height)
         """
-        if isinstance(val, int) is False:
+        if not isinstance(val, int):
             raise TypeError("height must be an integer")
         elif val < 0:
             raise ValueError("height must be >= 0")
