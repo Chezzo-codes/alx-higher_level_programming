@@ -9,6 +9,9 @@ class Rectangle:
     Rectangle Class with width and heightt
     """
     def __init__(self, width=0, height=0):
+        """
+        Initialize dimensions
+        """
         self.__width = width
         self.__height = height
 
