@@ -5,4 +5,5 @@ Module defines properties of a rectangle.
 
 
 class Rectangle:
-    pass
+    def __init__(self, width, height):
+        pass
