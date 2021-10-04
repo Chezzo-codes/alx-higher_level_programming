@@ -6,9 +6,12 @@ Module defines properties of a rectangle.
 
 class Rectangle:
     """
-    Initialize object
+    Rectangle Class with width and height
     """
     def __init__(self, width=0, height=0):
+        """
+        Initialize object
+        """
         self.__width = width
         self.__height = height
 
