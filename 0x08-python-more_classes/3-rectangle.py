@@ -72,8 +72,5 @@ class Rectangle:
         returns string of rectangle made up of '#'
         """
         if self.__width == 0 or self.__height == 0:
-            return ("")
-        else:
-            width = "#" * self.__width
-            rectangle = (width + '\n') * self.__height
-            return rectangle
+            return ""
+        return (('#'*self.__width + "\n")*self.__height)[:-1]
