@@ -1,11 +1,11 @@
 #!/usr/bin/python3
+import json
+from sys import argv
 """
 This file contains a function that adds
 all arguments to a python list and saves
 to a file
 """
-import json
-from sys import argv
 
 
 save_json = __import__('7-save_to_json_file').save_to_json_file
