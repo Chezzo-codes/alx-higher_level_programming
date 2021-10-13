@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Contains a function that returns
 an object (Python data structure)
