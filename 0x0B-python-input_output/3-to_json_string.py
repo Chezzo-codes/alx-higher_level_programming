@@ -1,4 +1,4 @@
-#!#/usr/bin/python3
+#!/usr/bin/python3
 """
 File with function which takes an object and converts it to json
 """
