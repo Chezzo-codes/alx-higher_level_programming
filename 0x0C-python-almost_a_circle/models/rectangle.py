@@ -107,8 +107,9 @@ class Rectangle(Base):
         prints in stdout the Rectangle
         instance with the character #
         """
-        for h in range(self.__height):
-            print("#" * self.__width)
+        print(("\n" * self.__y) +
+              "\n".join(((" " * self.__x) + ("#" * self.__width))
+                        for i in range(self.__height)))
 
     def __str__(self):
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
