@@ -118,28 +118,22 @@ class Rectangle(Base):
 
     def update(self, *args):
         """
-        function assigns an argument to each attribute
+        Update Multiple Atrr of The Rectangle
         """
-        if len(args):
-            for i, j in enumerate(args):
+        i = 0
+        if args:
+            for arg in args:
                 if i == 0:
-                    self.id = j
+                    self.id = arg
                 if i == 1:
-                    self.width = j
+                    self.width = arg
                 if i == 2:
-                    self.height = j
+                    self.height = arg
                 if i == 3:
-                    self.x = j
+                    self.x = arg
                 if i == 4:
-                    self.y = j
+                    self.y = arg
+                i += 1
         else:
-            if "id" in kwargs:
-                self.id = kwargs["id"]
-            if "width" in kwargs:
-                self.width = kwargs["width"]
-            if "height" in kwargs:
-                self.height = kwargs["height"]
-            if "x" in kwargs:
-                self.x = kwargs["x"]
-            if "y" in kwargs:
-                self.y = kwargs["y"]
+            for arg in kwargs:
+                setattr(self, arg, kwargs.get(arg))
