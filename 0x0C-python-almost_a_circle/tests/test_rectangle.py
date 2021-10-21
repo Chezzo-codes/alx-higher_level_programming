@@ -4,7 +4,8 @@ This module contains all unittest cases for
 Rectangle class
 """
 import unittest
-
+from models.base import Base
+from models.rectangle import Rectangle
 
 class TestRectangle(unittest.TestCase):
     """
