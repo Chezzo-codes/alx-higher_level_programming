@@ -21,4 +21,3 @@ if __name__ == "__main__":
             if 'a' in stat.name:
                 print("{}: {}".format(stat.id, stat.name))
     session().close()
-    

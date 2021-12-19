@@ -22,4 +22,3 @@ if __name__ == "__main__":
             session.delete(stat)
         session.commit()
     session.close()
-    
