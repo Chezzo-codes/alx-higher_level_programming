@@ -1,16 +1,12 @@
 #!/usr/bin/python3
-from sys import argv
-import requests
 """
 script takes 2 args and gets 10 commits
 """
 
 
 if __name__ == "__main__":
-    """
-    argv[1] = repository
-    argv[2] = owner
-    """
+    from sys import argv
+    import requests
     req = requests.get('https://api.github.com/repos/{}/{}/commits'
                        .format(argv[2], argv[1])).json()
     count = 0
